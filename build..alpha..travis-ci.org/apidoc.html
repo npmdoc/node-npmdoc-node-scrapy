@@ -1,0 +1,2953 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/eeshi/node-scrapy"
+
+    >node-scrapy (v0.3.1)</a>
+</h1>
+<h4>Simple, lightweight and expressive web scraping with Node.js</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-scrapy">module node-scrapy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom">
+            function <span class="apidocSignatureSpan">node-scrapy.</span>lodash_custom
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.scrape">
+            function <span class="apidocSignatureSpan">node-scrapy.</span>scrape
+            <span class="apidocSignatureSpan">(url, model, options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-scrapy.</span>lodash_custom.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-scrapy.lodash_custom">module node-scrapy.lodash_custom</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.lodash_custom">
+            function <span class="apidocSignatureSpan">node-scrapy.</span>lodash_custom
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom._">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>_
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.assign">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>assign
+            <span class="apidocSignatureSpan">(object, source, guard)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.bind">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>bind
+            <span class="apidocSignatureSpan">(func, thisArg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.chain">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>chain
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.cloneDeep">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>cloneDeep
+            <span class="apidocSignatureSpan">(value, callback, thisArg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.defaultsDeep">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>defaultsDeep
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.each">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>each
+            <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.extend">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>extend
+            <span class="apidocSignatureSpan">(object, source, guard)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.forEach">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>forEach
+            <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.forIn">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>forIn
+            <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.forOwn">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>forOwn
+            <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.functions">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>functions
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.identity">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>identity
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.isArray">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.isFunction">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isFunction
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.isObject">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isObject
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.isPlainObject">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isPlainObject
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.keys">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>keys
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.merge">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>merge
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.methods">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>methods
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.mixin">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>mixin
+            <span class="apidocSignatureSpan">(object, source, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.noop">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>noop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.partialRight">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>partialRight
+            <span class="apidocSignatureSpan">(func)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>support</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>VERSION</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-scrapy.lodash_custom.prototype">module node-scrapy.lodash_custom.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.assign">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>assign
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.bind">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>bind
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.chain">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>chain
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.cloneDeep">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>cloneDeep
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.concat">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>concat
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.defaultsDeep">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>defaultsDeep
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.each">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>each
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.extend">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>extend
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.forEach">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>forEach
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.forIn">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>forIn
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.forOwn">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>forOwn
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.functions">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>functions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.identity">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>identity
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.isArray">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.isFunction">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isFunction
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.isObject">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isObject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.isPlainObject">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isPlainObject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.join">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>join
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.keys">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>keys
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.merge">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>merge
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.methods">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>methods
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.mixin">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>mixin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.noop">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>noop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.partialRight">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>partialRight
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.pop">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>pop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.push">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>push
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.reverse">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>reverse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.shift">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>shift
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.slice">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>slice
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.sort">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>sort
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.splice">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>splice
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.support">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>support
+            <span class="apidocSignatureSpan">(n, guard)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.toString">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.unshift">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>unshift
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.value">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>value
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-scrapy.lodash_custom.prototype.valueOf">
+            function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>valueOf
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-scrapy" id="apidoc.module.node-scrapy">module node-scrapy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom" id="apidoc.element.node-scrapy.lodash_custom">
+        function <span class="apidocSignatureSpan">node-scrapy.</span>lodash_custom
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lodash(value) {
+  // don&#x27;t wrap if already wrapped, even if wrapped by a different `lodash` constructor
+  return (value &#x26;&#x26; typeof value == &#x27;object&#x27; &#x26;&#x26; !isArray(value) &#x26;&#x26; hasOwnProperty.call(value, &#x27;__wrapped__&#x27;))
+   ? value
+   : new lodashWrapper(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.scrape" id="apidoc.element.node-scrapy.scrape">
+        function <span class="apidocSignatureSpan">node-scrapy.</span>scrape
+        <span class="apidocSignatureSpan">(url, model, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function scrape(url, model, options, cb) {
+
+<span class="apidocCodeCommentSpan">  /**
+   * Make `options` argument optional
+   */
+</span>
+  if (&#x27;function&#x27; === typeof options) {
+
+    /**
+     * Interchange `cb`&#x27;s position and fill `options` with nice defaults
+     */
+
+    cb = options;
+    options = _.cloneDeep(DEFAULTS);
+
+  } else {
+
+    /**
+     * Merge all options from `DEFAULTS` not present in `options`
+     */
+
+    _.defaultsDeep(options, DEFAULTS);
+
+  }
+
+  /**
+   * Set `request`&#x27;s Uniform Resource Identifier to provied `url`
+   * @type {string}
+   */
+
+  options.requestOptions.uri = url;
+
+  /**
+   * Call `request()` to get the resource
+   */
+
+  request(options.requestOptions, processResponse);
+
+  /**
+   * Handle `request()`&#x27;s result: Chain `err` or proceed to parse the resource.
+   */
+
+  function processResponse(err, res, body) {
+
+    if (err) { return cb(err); }
+
+    if (res.statusCode !== 200) {
+      return cb(new ScrapeError(&#x27;Not OK response from server.&#x27;, res, body));
+    }
+
+    parseBody(body, model, options, cb);
+
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Scraping made simple
+
+```js
+var scrapy = require(&#x27;node-scrapy&#x27;)
+  , url = &#x27;https://github.com/strongloop/express&#x27;
+  , selector = &#x27;.repository-description&#x27;
+
+scrapy.<span class="apidocCodeKeywordSpan">scrape</span>(url, selector, function(err, data) {
+    if (err) return console.error(err)
+    console.log(data)
+});
+
+// &#x27;Fast, unopinionated, minimalist web framework for node.&#x27;
+```
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-scrapy.lodash_custom" id="apidoc.module.node-scrapy.lodash_custom">module node-scrapy.lodash_custom</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.lodash_custom" id="apidoc.element.node-scrapy.lodash_custom.lodash_custom">
+        function <span class="apidocSignatureSpan">node-scrapy.</span>lodash_custom
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lodash(value) {
+  // don&#x27;t wrap if already wrapped, even if wrapped by a different `lodash` constructor
+  return (value &#x26;&#x26; typeof value == &#x27;object&#x27; &#x26;&#x26; !isArray(value) &#x26;&#x26; hasOwnProperty.call(value, &#x27;__wrapped__&#x27;))
+   ? value
+   : new lodashWrapper(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom._" id="apidoc.element.node-scrapy.lodash_custom._">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>_
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lodash(value) {
+  // don&#x27;t wrap if already wrapped, even if wrapped by a different `lodash` constructor
+  return (value &#x26;&#x26; typeof value == &#x27;object&#x27; &#x26;&#x26; !isArray(value) &#x26;&#x26; hasOwnProperty.call(value, &#x27;__wrapped__&#x27;))
+   ? value
+   : new lodashWrapper(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.assign" id="apidoc.element.node-scrapy.lodash_custom.assign">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>assign
+        <span class="apidocSignatureSpan">(object, source, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">assign = function (object, source, guard) {
+  var index, iterable = object, result = iterable;
+  if (!iterable) return result;
+  var args = arguments,
+      argsIndex = 0,
+      argsLength = typeof guard == &#x27;number&#x27; ? 2 : args.length;
+  if (argsLength &#x3e; 3 &#x26;&#x26; typeof args[argsLength - 2] == &#x27;function&#x27;) {
+    var callback = baseCreateCallback(args[--argsLength - 1], args[argsLength--], 2);
+  } else if (argsLength &#x3e; 2 &#x26;&#x26; typeof args[argsLength - 1] == &#x27;function&#x27;) {
+    callback = args[--argsLength];
+  }
+  while (++argsIndex &#x3c; argsLength) {
+    iterable = args[argsIndex];
+    if (iterable &#x26;&#x26; objectTypes[typeof iterable]) {
+    var ownIndex = -1,
+        ownProps = objectTypes[typeof iterable] &#x26;&#x26; keys(iterable),
+        length = ownProps ? ownProps.length : 0;
+
+    while (++ownIndex &#x3c; length) {
+      index = ownProps[ownIndex];
+      result[index] = callback ? callback(result[index], iterable[index]) : iterable[index];
+    }
+    }
+  }
+  return result
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {Object} object The destination object.
+* @param {...Object} [source] The source objects.
+* @param {Function} [callback] The function to customize assigning values.
+* @param {*} [thisArg] The `this` binding of `callback`.
+* @returns {Object} Returns the destination object.
+* @example
+*
+* _.<span class="apidocCodeKeywordSpan">assign</span>({ &#x27;name&#x27;: &#x27;fred&#x27; }, { &#x27;employer&#x27;: &#x27;slate
+&#x27; });
+* // =&#x3e; { &#x27;name&#x27;: &#x27;fred&#x27;, &#x27;employer&#x27;: &#x27;slate&#x27; }
+*
+* var defaults = _.partialRight(_.assign, function(a, b) {
+*   return typeof a == &#x27;undefined&#x27; ? b : a;
+* });
+*
+* var object = { &#x27;name&#x27;: &#x27;barney&#x27; };
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.bind" id="apidoc.element.node-scrapy.lodash_custom.bind">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>bind
+        <span class="apidocSignatureSpan">(func, thisArg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bind(func, thisArg) {
+  return arguments.length &#x3e; 2
+    ? createWrapper(func, 17, slice(arguments, 2), null, thisArg)
+    : createWrapper(func, 1, null, null, thisArg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @returns {Function} Returns the new bound function.
+ * @example
+ *
+ * var func = function(greeting) {
+ *   return greeting + &#x27; &#x27; + this.name;
+ * };
+ *
+ * func = _.<span class="apidocCodeKeywordSpan">bind</span>(func, { &#x27;name&#x27;: &#x27;fred&#x27; }, &#x27;hi&#x27;);
+ * func();
+ * // =&#x3e; &#x27;hi fred&#x27;
+ */
+function bind(func, thisArg) {
+  return arguments.length &#x3e; 2
+    ? createWrapper(func, 17, slice(arguments, 2), null, thisArg)
+    : createWrapper(func, 1, null, null, thisArg);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.chain" id="apidoc.element.node-scrapy.lodash_custom.chain">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>chain
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function chain(value) {
+  value = new lodashWrapper(value);
+  value.__chain__ = true;
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * var characters = [
+ *   { &#x27;name&#x27;: &#x27;barney&#x27;,  &#x27;age&#x27;: 36 },
+ *   { &#x27;name&#x27;: &#x27;fred&#x27;,    &#x27;age&#x27;: 40 },
+ *   { &#x27;name&#x27;: &#x27;pebbles&#x27;, &#x27;age&#x27;: 1 }
+ * ];
+ *
+ * var youngest = _.<span class="apidocCodeKeywordSpan">chain</span>(characters)
+ *     .sortBy(&#x27;age&#x27;)
+ *     .map(function(chr) { return chr.name + &#x27; is &#x27; + chr.age; })
+ *     .first()
+ *     .value();
+ * // =&#x3e; &#x27;pebbles is 1&#x27;
+ */
+function chain(value) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.cloneDeep" id="apidoc.element.node-scrapy.lodash_custom.cloneDeep">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>cloneDeep
+        <span class="apidocSignatureSpan">(value, callback, thisArg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cloneDeep(value, callback, thisArg) {
+  return baseClone(value, true, typeof callback == &#x27;function&#x27; &#x26;&#x26; baseCreateCallback(callback, thisArg, 1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (&#x27;function&#x27; === typeof options) {
+
+/**
+ * Interchange `cb`&#x27;s position and fill `options` with nice defaults
+ */
+
+cb = options;
+options = _.<span class="apidocCodeKeywordSpan">cloneDeep</span>(DEFAULTS);
+
+  } else {
+
+/**
+ * Merge all options from `DEFAULTS` not present in `options`
+ */
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.defaultsDeep" id="apidoc.element.node-scrapy.lodash_custom.defaultsDeep">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>defaultsDeep
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bound() {
+  var thisBinding = isBind ? thisArg : this;
+  if (partialArgs) {
+    var args = slice(partialArgs);
+    push.apply(args, arguments);
+  }
+  if (partialRightArgs || isCurry) {
+    args || (args = slice(arguments));
+    if (partialRightArgs) {
+      push.apply(args, partialRightArgs);
+    }
+    if (isCurry &#x26;&#x26; args.length &#x3c; arity) {
+      bitmask |= 16 &#x26; ~32;
+      return baseCreateWrapper([func, (isCurryBound ? bitmask : bitmask &#x26; ~3), args, null, thisArg, arity]);
+    }
+  }
+  args || (args = arguments);
+  if (isBindKey) {
+    func = thisBinding[key];
+  }
+  if (this instanceof bound) {
+    thisBinding = baseCreate(func.prototype);
+    var result = func.apply(thisBinding, args);
+    return isObject(result) ? result : thisBinding;
+  }
+  return func.apply(thisBinding, args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *   likes: [&#x27;html&#x27;,&#x27;css&#x27;],
+ *   active: true,
+ *   mainProject: {
+ *     name: &#x27;supervisor&#x27;
+ *   }
+ * }
+ *
+ * _.<span class="apidocCodeKeywordSpan">defaultsDeep</span>(sam, DEFAULTS)
+ * // {name:&#x22;Sam&#x22;,likes:[&#x22;html&#x22;,&#x22;css&#x22;],active:true,mainProject:{name:&#x22;supervisor&#x22;,org:&#
+x22;esshi&#x22;},org:&#x22;eeshi&#x22;}
+ *
+ * sam.mainProject === DEFAULTS.mainProject
+ * // false
+ */
+
+_.mixin({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.each" id="apidoc.element.node-scrapy.lodash_custom.each">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>each
+        <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function forEach(collection, callback, thisArg) {
+  var index = -1,
+      length = collection ? collection.length : 0;
+
+  callback = callback &#x26;&#x26; typeof thisArg == &#x27;undefined&#x27; ? callback : baseCreateCallback(callback, thisArg, 3);
+  if (typeof length == &#x27;number&#x27;) {
+    while (++index &#x3c; length) {
+      if (callback(collection[index], index, collection) === false) {
+        break;
+      }
+    }
+  } else {
+    forOwn(collection, callback);
+  }
+  return collection;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.extend" id="apidoc.element.node-scrapy.lodash_custom.extend">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>extend
+        <span class="apidocSignatureSpan">(object, source, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extend = function (object, source, guard) {
+  var index, iterable = object, result = iterable;
+  if (!iterable) return result;
+  var args = arguments,
+      argsIndex = 0,
+      argsLength = typeof guard == &#x27;number&#x27; ? 2 : args.length;
+  if (argsLength &#x3e; 3 &#x26;&#x26; typeof args[argsLength - 2] == &#x27;function&#x27;) {
+    var callback = baseCreateCallback(args[--argsLength - 1], args[argsLength--], 2);
+  } else if (argsLength &#x3e; 2 &#x26;&#x26; typeof args[argsLength - 1] == &#x27;function&#x27;) {
+    callback = args[--argsLength];
+  }
+  while (++argsIndex &#x3c; argsLength) {
+    iterable = args[argsIndex];
+    if (iterable &#x26;&#x26; objectTypes[typeof iterable]) {
+    var ownIndex = -1,
+        ownProps = objectTypes[typeof iterable] &#x26;&#x26; keys(iterable),
+        length = ownProps ? ownProps.length : 0;
+
+    while (++ownIndex &#x3c; length) {
+      index = ownProps[ownIndex];
+      result[index] = callback ? callback(result[index], iterable[index]) : iterable[index];
+    }
+    }
+  }
+  return result
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.forEach" id="apidoc.element.node-scrapy.lodash_custom.forEach">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>forEach
+        <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function forEach(collection, callback, thisArg) {
+  var index = -1,
+      length = collection ? collection.length : 0;
+
+  callback = callback &#x26;&#x26; typeof thisArg == &#x27;undefined&#x27; ? callback : baseCreateCallback(callback, thisArg, 3);
+  if (typeof length == &#x27;number&#x27;) {
+    while (++index &#x3c; length) {
+      if (callback(collection[index], index, collection) === false) {
+        break;
+      }
+    }
+  } else {
+    forOwn(collection, callback);
+  }
+  return collection;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @category Collections
+ * @param {Array|Object|string} collection The collection to iterate over.
+ * @param {Function} [callback=identity] The function called per iteration.
+ * @param {*} [thisArg] The `this` binding of `callback`.
+ * @returns {Array|Object|string} Returns `collection`.
+ * @example
+ *
+ * _([1, 2, 3]).<span class="apidocCodeKeywordSpan">forEach</span>(function(num) { console.log(num); }).join(&#x27;,&#x27;);
+ * // =&#x3e; logs each number and returns &#x27;1,2,3&#x27;
+ *
+ * _.forEach({ &#x27;one&#x27;: 1, &#x27;two&#x27;: 2, &#x27;three&#x27;: 3 }, function(num) { console.log(num); });
+ * // =&#x3e; logs each number and returns the object (property order is not guaranteed across environments)
+ */
+function forEach(collection, callback, thisArg) {
+  var index = -1,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.forIn" id="apidoc.element.node-scrapy.lodash_custom.forIn">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>forIn
+        <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forIn = function (collection, callback, thisArg) {
+  var index, iterable = collection, result = iterable;
+  if (!iterable) return result;
+  if (!objectTypes[typeof iterable]) return result;
+  callback = callback &#x26;&#x26; typeof thisArg == &#x27;undefined&#x27; ? callback : baseCreateCallback(callback, thisArg, 3);
+    for (index in iterable) {
+      if (callback(iterable[index], index, collection) === false) return result;
+    }
+  return result
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * }
+ *
+ * Shape.prototype.move = function(x, y) {
+ *   this.x += x;
+ *   this.y += y;
+ * };
+ *
+ * _.<span class="apidocCodeKeywordSpan">forIn</span>(new Shape, function(value, key) {
+ *   console.log(key);
+ * });
+ * // =&#x3e; logs &#x27;x&#x27;, &#x27;y&#x27;, and &#x27;move&#x27; (property order is not guaranteed across environments)
+ */
+var forIn = function(collection, callback, thisArg) {
+  var index, iterable = collection, result = iterable;
+  if (!iterable) return result;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.forOwn" id="apidoc.element.node-scrapy.lodash_custom.forOwn">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>forOwn
+        <span class="apidocSignatureSpan">(collection, callback, thisArg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forOwn = function (collection, callback, thisArg) {
+  var index, iterable = collection, result = iterable;
+  if (!iterable) return result;
+  if (!objectTypes[typeof iterable]) return result;
+  callback = callback &#x26;&#x26; typeof thisArg == &#x27;undefined&#x27; ? callback : baseCreateCallback(callback, thisArg, 3);
+    var ownIndex = -1,
+        ownProps = objectTypes[typeof iterable] &#x26;&#x26; keys(iterable),
+        length = ownProps ? ownProps.length : 0;
+
+    while (++ownIndex &#x3c; length) {
+      index = ownProps[ownIndex];
+      if (callback(iterable[index], index, collection) === false) return result;
+    }
+  return result
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @category Objects
+ * @param {Object} object The object to iterate over.
+ * @param {Function} [callback=identity] The function called per iteration.
+ * @param {*} [thisArg] The `this` binding of `callback`.
+ * @returns {Object} Returns `object`.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">forOwn</span>({ &#x27;0&#x27;: &#x27;zero&#x27;, &#x27;1&#x27;: &#x27;one&#x27;, &#x27;
+length&#x27;: 2 }, function(num, key) {
+ *   console.log(key);
+ * });
+ * // =&#x3e; logs &#x27;0&#x27;, &#x27;1&#x27;, and &#x27;length&#x27; (property order is not guaranteed across environments)
+ */
+var forOwn = function(collection, callback, thisArg) {
+  var index, iterable = collection, result = iterable;
+  if (!iterable) return result;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.functions" id="apidoc.element.node-scrapy.lodash_custom.functions">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>functions
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function functions(object) {
+  var result = [];
+  forIn(object, function(value, key) {
+    if (isFunction(value)) {
+      result.push(key);
+    }
+  });
+  return result.sort();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @memberOf _
+ * @alias methods
+ * @category Objects
+ * @param {Object} object The object to inspect.
+ * @returns {Array} Returns an array of property names that have function values.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">functions</span>(_);
+ * // =&#x3e; [&#x27;all&#x27;, &#x27;any&#x27;, &#x27;bind&#x27;, &#x27;bindAll&#x27;, &#x27;clone&#x27;, &#x27;compact&#x27;, &#
+x27;compose&#x27;, ...]
+ */
+function functions(object) {
+  var result = [];
+  forIn(object, function(value, key) {
+    if (isFunction(value)) {
+      result.push(key);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.identity" id="apidoc.element.node-scrapy.lodash_custom.identity">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>identity
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function identity(value) {
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @memberOf _
+ * @category Utilities
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { &#x27;name&#x27;: &#x27;fred&#x27; };
+ * _.<span class="apidocCodeKeywordSpan">identity</span>(object) === object;
+ * // =&#x3e; true
+ */
+function identity(value) {
+  return value;
+}
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.isArray" id="apidoc.element.node-scrapy.lodash_custom.isArray">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * // =&#x3e; 6
+ *
+ * // returns a wrapped value
+ * var squares = wrapped.map(function(num) {
+ *   return num * num;
+ * });
+ *
+ * _.<span class="apidocCodeKeywordSpan">isArray</span>(squares);
+ * // =&#x3e; false
+ *
+ * _.isArray(squares.value());
+ * // =&#x3e; true
+ */
+function lodash(value) {
+  // don&#x27;t wrap if already wrapped, even if wrapped by a different `lodash` constructor
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.isFunction" id="apidoc.element.node-scrapy.lodash_custom.isFunction">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isFunction
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFunction(value) {
+  return typeof value == &#x27;function&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @static
+ * @memberOf _
+ * @category Objects
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if the `value` is a function, else `false`.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">isFunction</span>(_);
+ * // =&#x3e; true
+ */
+function isFunction(value) {
+  return typeof value == &#x27;function&#x27;;
+}
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.isObject" id="apidoc.element.node-scrapy.lodash_custom.isObject">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isObject
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isObject(value) {
+  // check if the value is the ECMAScript language type of Object
+  // http://es5.github.io/#x8
+  // and avoid a V8 bug
+  // http://code.google.com/p/v8/issues/detail?id=2291
+  return !!(value &#x26;&#x26; objectTypes[typeof value]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @static
+* @memberOf _
+* @category Objects
+* @param {*} value The value to check.
+* @returns {boolean} Returns `true` if the `value` is an object, else `false`.
+* @example
+*
+* _.<span class="apidocCodeKeywordSpan">isObject</span>({});
+* // =&#x3e; true
+*
+* _.isObject([1, 2, 3]);
+* // =&#x3e; true
+*
+* _.isObject(1);
+* // =&#x3e; false
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.isPlainObject" id="apidoc.element.node-scrapy.lodash_custom.isPlainObject">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>isPlainObject
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isPlainObject = function (value) {
+  if (!(value &#x26;&#x26; toString.call(value) == objectClass)) {
+    return false;
+  }
+  var valueOf = value.valueOf,
+      objProto = isNative(valueOf) &#x26;&#x26; (objProto = getPrototypeOf(valueOf)) &#x26;&#x26; getPrototypeOf(objProto);
+
+  return objProto
+    ? (value == objProto || getPrototypeOf(value) == objProto)
+    : shimIsPlainObject(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @example
+*
+* function Shape() {
+*   this.x = 0;
+*   this.y = 0;
+* }
+*
+* _.<span class="apidocCodeKeywordSpan">isPlainObject</span>(new Shape);
+* // =&#x3e; false
+*
+* _.isPlainObject([1, 2, 3]);
+* // =&#x3e; false
+*
+* _.isPlainObject({ &#x27;x&#x27;: 0, &#x27;y&#x27;: 0 });
+* // =&#x3e; true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.keys" id="apidoc.element.node-scrapy.lodash_custom.keys">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>keys
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keys = function (object) {
+  if (!isObject(object)) {
+    return [];
+  }
+  return nativeKeys(object);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @static
+ * @memberOf _
+ * @category Objects
+ * @param {Object} object The object to inspect.
+ * @returns {Array} Returns an array of property names.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">keys</span>({ &#x27;one&#x27;: 1, &#x27;two&#x27;: 2, &#x27;three&#x27;: 3 });
+ * // =&#x3e; [&#x27;one&#x27;, &#x27;two&#x27;, &#x27;three&#x27;] (property order is not guaranteed across environments)
+ */
+var keys = !nativeKeys ? shimKeys : function(object) {
+  if (!isObject(object)) {
+    return [];
+  }
+  return nativeKeys(object);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.merge" id="apidoc.element.node-scrapy.lodash_custom.merge">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>merge
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function merge(object) {
+  var args = arguments,
+      length = 2;
+
+  if (!isObject(object)) {
+    return object;
+  }
+  // allows working with `_.reduce` and `_.reduceRight` without using
+  // their `index` and `collection` arguments
+  if (typeof args[2] != &#x27;number&#x27;) {
+    length = args.length;
+  }
+  if (length &#x3e; 3 &#x26;&#x26; typeof args[length - 2] == &#x27;function&#x27;) {
+    var callback = baseCreateCallback(args[--length - 1], args[length--], 2);
+  } else if (length &#x3e; 2 &#x26;&#x26; typeof args[length - 1] == &#x27;function&#x27;) {
+    callback = args[--length];
+  }
+  var sources = slice(arguments, 1, length),
+      index = -1,
+      stackA = getArray(),
+      stackB = getArray();
+
+  while (++index &#x3c; length) {
+    baseMerge(object, sources[index], callback, stackA, stackB);
+  }
+  releaseArray(stackA);
+  releaseArray(stackB);
+  return object;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * sam.mainProject === DEFAULTS.mainProject
+ * // false
+ */
+
+_.mixin({
+  &#x27;defaultsDeep&#x27;: _.partialRight(_.merge, function deep(value, other) {
+      return _.<span class="apidocCodeKeywordSpan">merge</span>(value, other, deep);
+    })
+});
+
+/**
+ * Custom Error for node-scrapy
+ */
+function ScrapeError(msg, response, bodyString) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.methods" id="apidoc.element.node-scrapy.lodash_custom.methods">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>methods
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function functions(object) {
+  var result = [];
+  forIn(object, function(value, key) {
+    if (isFunction(value)) {
+      result.push(key);
+    }
+  });
+  return result.sort();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.mixin" id="apidoc.element.node-scrapy.lodash_custom.mixin">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>mixin
+        <span class="apidocSignatureSpan">(object, source, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mixin(object, source, options) {
+  var chain = true,
+      methodNames = source &#x26;&#x26; functions(source);
+
+  if (!source || (!options &#x26;&#x26; !methodNames.length)) {
+    if (options == null) {
+      options = source;
+    }
+    ctor = lodashWrapper;
+    source = object;
+    object = lodash;
+    methodNames = functions(source);
+  }
+  if (options === false) {
+    chain = false;
+  } else if (isObject(options) &#x26;&#x26; &#x27;chain&#x27; in options) {
+    chain = options.chain;
+  }
+  var ctor = object,
+      isFunc = isFunction(ctor);
+
+  forEach(methodNames, function(methodName) {
+    var func = object[methodName] = source[methodName];
+    if (isFunc) {
+      ctor.prototype[methodName] = function() {
+        var chainAll = this.__chain__,
+            value = this.__wrapped__,
+            args = [value];
+
+        push.apply(args, arguments);
+        var result = func.apply(object, args);
+        if (chain || chainAll) {
+          if (value === result &#x26;&#x26; isObject(result)) {
+            return this;
+          }
+          result = new ctor(result);
+          result.__chain__ = chainAll;
+        }
+        return result;
+      };
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* _.defaultsDeep(sam, DEFAULTS)
+* // {name:&#x22;Sam&#x22;,likes:[&#x22;html&#x22;,&#x22;css&#x22;],active:true,mainProject:{name:&#x22;supervisor&#x22;,org:&#x22
+;esshi&#x22;},org:&#x22;eeshi&#x22;}
+*
+* sam.mainProject === DEFAULTS.mainProject
+* // false
+*/
+
+_.<span class="apidocCodeKeywordSpan">mixin</span>({
+ &#x27;defaultsDeep&#x27;: _.partialRight(_.merge, function deep(value, other) {
+     return _.merge(value, other, deep);
+   })
+});
+
+/**
+* Custom Error for node-scrapy
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.noop" id="apidoc.element.node-scrapy.lodash_custom.noop">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>noop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop() {
+  // no operation performed
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @static
+ * @memberOf _
+ * @category Utilities
+ * @example
+ *
+ * var object = { &#x27;name&#x27;: &#x27;fred&#x27; };
+ * _.<span class="apidocCodeKeywordSpan">noop</span>(object) === undefined;
+ * // =&#x3e; true
+ */
+function noop() {
+  // no operation performed
+}
+
+/*--------------------------------------------------------------------------*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.partialRight" id="apidoc.element.node-scrapy.lodash_custom.partialRight">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.</span>partialRight
+        <span class="apidocSignatureSpan">(func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function partialRight(func) {
+  return createWrapper(func, 32, null, slice(arguments, 1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* // {name:&#x22;Sam&#x22;,likes:[&#x22;html&#x22;,&#x22;css&#x22;],active:true,mainProject:{name:&#x22;supervisor&#x22;,org:&#x22
+;esshi&#x22;},org:&#x22;eeshi&#x22;}
+*
+* sam.mainProject === DEFAULTS.mainProject
+* // false
+*/
+
+_.mixin({
+ &#x27;defaultsDeep&#x27;: _.<span class="apidocCodeKeywordSpan">partialRight</span>(_.merge, function deep(value, other) {
+     return _.merge(value, other, deep);
+   })
+});
+
+/**
+* Custom Error for node-scrapy
+*/
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-scrapy.lodash_custom.prototype" id="apidoc.module.node-scrapy.lodash_custom.prototype">module node-scrapy.lodash_custom.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.assign" id="apidoc.element.node-scrapy.lodash_custom.prototype.assign">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>assign
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">assign = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {Object} object The destination object.
+* @param {...Object} [source] The source objects.
+* @param {Function} [callback] The function to customize assigning values.
+* @param {*} [thisArg] The `this` binding of `callback`.
+* @returns {Object} Returns the destination object.
+* @example
+*
+* _.<span class="apidocCodeKeywordSpan">assign</span>({ &#x27;name&#x27;: &#x27;fred&#x27; }, { &#x27;employer&#x27;: &#x27;slate
+&#x27; });
+* // =&#x3e; { &#x27;name&#x27;: &#x27;fred&#x27;, &#x27;employer&#x27;: &#x27;slate&#x27; }
+*
+* var defaults = _.partialRight(_.assign, function(a, b) {
+*   return typeof a == &#x27;undefined&#x27; ? b : a;
+* });
+*
+* var object = { &#x27;name&#x27;: &#x27;barney&#x27; };
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.bind" id="apidoc.element.node-scrapy.lodash_custom.prototype.bind">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>bind
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bind = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @returns {Function} Returns the new bound function.
+ * @example
+ *
+ * var func = function(greeting) {
+ *   return greeting + &#x27; &#x27; + this.name;
+ * };
+ *
+ * func = _.<span class="apidocCodeKeywordSpan">bind</span>(func, { &#x27;name&#x27;: &#x27;fred&#x27; }, &#x27;hi&#x27;);
+ * func();
+ * // =&#x3e; &#x27;hi fred&#x27;
+ */
+function bind(func, thisArg) {
+  return arguments.length &#x3e; 2
+    ? createWrapper(func, 17, slice(arguments, 2), null, thisArg)
+    : createWrapper(func, 1, null, null, thisArg);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.chain" id="apidoc.element.node-scrapy.lodash_custom.prototype.chain">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>chain
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapperChain() {
+  this.__chain__ = true;
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * var characters = [
+ *   { &#x27;name&#x27;: &#x27;barney&#x27;,  &#x27;age&#x27;: 36 },
+ *   { &#x27;name&#x27;: &#x27;fred&#x27;,    &#x27;age&#x27;: 40 },
+ *   { &#x27;name&#x27;: &#x27;pebbles&#x27;, &#x27;age&#x27;: 1 }
+ * ];
+ *
+ * var youngest = _.<span class="apidocCodeKeywordSpan">chain</span>(characters)
+ *     .sortBy(&#x27;age&#x27;)
+ *     .map(function(chr) { return chr.name + &#x27; is &#x27; + chr.age; })
+ *     .first()
+ *     .value();
+ * // =&#x3e; &#x27;pebbles is 1&#x27;
+ */
+function chain(value) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.cloneDeep" id="apidoc.element.node-scrapy.lodash_custom.prototype.cloneDeep">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>cloneDeep
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cloneDeep = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (&#x27;function&#x27; === typeof options) {
+
+/**
+ * Interchange `cb`&#x27;s position and fill `options` with nice defaults
+ */
+
+cb = options;
+options = _.<span class="apidocCodeKeywordSpan">cloneDeep</span>(DEFAULTS);
+
+  } else {
+
+/**
+ * Merge all options from `DEFAULTS` not present in `options`
+ */
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.concat" id="apidoc.element.node-scrapy.lodash_custom.prototype.concat">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>concat
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">concat = function () {
+  return new lodashWrapper(func.apply(this.__wrapped__, arguments), this.__chain__);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * var otherFood = {
+ *   &#x27;fruits&#x27;: [&#x27;banana&#x27;],
+ *   &#x27;vegetables&#x27;: [&#x27;carrot&#x27;]
+ * };
+ *
+ * _.merge(food, otherFood, function(a, b) {
+ *   return _.isArray(a) ? a.<span class="apidocCodeKeywordSpan">concat</span>(b) : undefined;
+ * });
+ * // =&#x3e; { &#x27;fruits&#x27;: [&#x27;apple&#x27;, &#x27;banana&#x27;], &#x27;vegetables&#x27;: [&#x27;beet&#x27;, &#x27;carrot
+] }
+ */
+function merge(object) {
+  var args = arguments,
+      length = 2;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.defaultsDeep" id="apidoc.element.node-scrapy.lodash_custom.prototype.defaultsDeep">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>defaultsDeep
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultsDeep = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *   likes: [&#x27;html&#x27;,&#x27;css&#x27;],
+ *   active: true,
+ *   mainProject: {
+ *     name: &#x27;supervisor&#x27;
+ *   }
+ * }
+ *
+ * _.<span class="apidocCodeKeywordSpan">defaultsDeep</span>(sam, DEFAULTS)
+ * // {name:&#x22;Sam&#x22;,likes:[&#x22;html&#x22;,&#x22;css&#x22;],active:true,mainProject:{name:&#x22;supervisor&#x22;,org:&#
+x22;esshi&#x22;},org:&#x22;eeshi&#x22;}
+ *
+ * sam.mainProject === DEFAULTS.mainProject
+ * // false
+ */
+
+_.mixin({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.each" id="apidoc.element.node-scrapy.lodash_custom.prototype.each">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>each
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">each = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.extend" id="apidoc.element.node-scrapy.lodash_custom.prototype.extend">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>extend
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extend = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.forEach" id="apidoc.element.node-scrapy.lodash_custom.prototype.forEach">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>forEach
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forEach = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @category Collections
+ * @param {Array|Object|string} collection The collection to iterate over.
+ * @param {Function} [callback=identity] The function called per iteration.
+ * @param {*} [thisArg] The `this` binding of `callback`.
+ * @returns {Array|Object|string} Returns `collection`.
+ * @example
+ *
+ * _([1, 2, 3]).<span class="apidocCodeKeywordSpan">forEach</span>(function(num) { console.log(num); }).join(&#x27;,&#x27;);
+ * // =&#x3e; logs each number and returns &#x27;1,2,3&#x27;
+ *
+ * _.forEach({ &#x27;one&#x27;: 1, &#x27;two&#x27;: 2, &#x27;three&#x27;: 3 }, function(num) { console.log(num); });
+ * // =&#x3e; logs each number and returns the object (property order is not guaranteed across environments)
+ */
+function forEach(collection, callback, thisArg) {
+  var index = -1,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.forIn" id="apidoc.element.node-scrapy.lodash_custom.prototype.forIn">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>forIn
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forIn = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * }
+ *
+ * Shape.prototype.move = function(x, y) {
+ *   this.x += x;
+ *   this.y += y;
+ * };
+ *
+ * _.<span class="apidocCodeKeywordSpan">forIn</span>(new Shape, function(value, key) {
+ *   console.log(key);
+ * });
+ * // =&#x3e; logs &#x27;x&#x27;, &#x27;y&#x27;, and &#x27;move&#x27; (property order is not guaranteed across environments)
+ */
+var forIn = function(collection, callback, thisArg) {
+  var index, iterable = collection, result = iterable;
+  if (!iterable) return result;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.forOwn" id="apidoc.element.node-scrapy.lodash_custom.prototype.forOwn">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>forOwn
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forOwn = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @category Objects
+ * @param {Object} object The object to iterate over.
+ * @param {Function} [callback=identity] The function called per iteration.
+ * @param {*} [thisArg] The `this` binding of `callback`.
+ * @returns {Object} Returns `object`.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">forOwn</span>({ &#x27;0&#x27;: &#x27;zero&#x27;, &#x27;1&#x27;: &#x27;one&#x27;, &#x27;
+length&#x27;: 2 }, function(num, key) {
+ *   console.log(key);
+ * });
+ * // =&#x3e; logs &#x27;0&#x27;, &#x27;1&#x27;, and &#x27;length&#x27; (property order is not guaranteed across environments)
+ */
+var forOwn = function(collection, callback, thisArg) {
+  var index, iterable = collection, result = iterable;
+  if (!iterable) return result;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.functions" id="apidoc.element.node-scrapy.lodash_custom.prototype.functions">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>functions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">functions = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @memberOf _
+ * @alias methods
+ * @category Objects
+ * @param {Object} object The object to inspect.
+ * @returns {Array} Returns an array of property names that have function values.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">functions</span>(_);
+ * // =&#x3e; [&#x27;all&#x27;, &#x27;any&#x27;, &#x27;bind&#x27;, &#x27;bindAll&#x27;, &#x27;clone&#x27;, &#x27;compact&#x27;, &#
+x27;compose&#x27;, ...]
+ */
+function functions(object) {
+  var result = [];
+  forIn(object, function(value, key) {
+    if (isFunction(value)) {
+      result.push(key);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.identity" id="apidoc.element.node-scrapy.lodash_custom.prototype.identity">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>identity
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">identity = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @memberOf _
+ * @category Utilities
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { &#x27;name&#x27;: &#x27;fred&#x27; };
+ * _.<span class="apidocCodeKeywordSpan">identity</span>(object) === object;
+ * // =&#x3e; true
+ */
+function identity(value) {
+  return value;
+}
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.isArray" id="apidoc.element.node-scrapy.lodash_custom.prototype.isArray">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isArray = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * // =&#x3e; 6
+ *
+ * // returns a wrapped value
+ * var squares = wrapped.map(function(num) {
+ *   return num * num;
+ * });
+ *
+ * _.<span class="apidocCodeKeywordSpan">isArray</span>(squares);
+ * // =&#x3e; false
+ *
+ * _.isArray(squares.value());
+ * // =&#x3e; true
+ */
+function lodash(value) {
+  // don&#x27;t wrap if already wrapped, even if wrapped by a different `lodash` constructor
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.isFunction" id="apidoc.element.node-scrapy.lodash_custom.prototype.isFunction">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isFunction
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isFunction = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @static
+ * @memberOf _
+ * @category Objects
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if the `value` is a function, else `false`.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">isFunction</span>(_);
+ * // =&#x3e; true
+ */
+function isFunction(value) {
+  return typeof value == &#x27;function&#x27;;
+}
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.isObject" id="apidoc.element.node-scrapy.lodash_custom.prototype.isObject">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isObject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isObject = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @static
+* @memberOf _
+* @category Objects
+* @param {*} value The value to check.
+* @returns {boolean} Returns `true` if the `value` is an object, else `false`.
+* @example
+*
+* _.<span class="apidocCodeKeywordSpan">isObject</span>({});
+* // =&#x3e; true
+*
+* _.isObject([1, 2, 3]);
+* // =&#x3e; true
+*
+* _.isObject(1);
+* // =&#x3e; false
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.isPlainObject" id="apidoc.element.node-scrapy.lodash_custom.prototype.isPlainObject">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>isPlainObject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isPlainObject = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @example
+*
+* function Shape() {
+*   this.x = 0;
+*   this.y = 0;
+* }
+*
+* _.<span class="apidocCodeKeywordSpan">isPlainObject</span>(new Shape);
+* // =&#x3e; false
+*
+* _.isPlainObject([1, 2, 3]);
+* // =&#x3e; false
+*
+* _.isPlainObject({ &#x27;x&#x27;: 0, &#x27;y&#x27;: 0 });
+* // =&#x3e; true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.join" id="apidoc.element.node-scrapy.lodash_custom.prototype.join">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>join
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">join = function () {
+  var chainAll = this.__chain__,
+      result = func.apply(this.__wrapped__, arguments);
+
+  return chainAll
+    ? new lodashWrapper(result, chainAll)
+    : result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @category Collections
+ * @param {Array|Object|string} collection The collection to iterate over.
+ * @param {Function} [callback=identity] The function called per iteration.
+ * @param {*} [thisArg] The `this` binding of `callback`.
+ * @returns {Array|Object|string} Returns `collection`.
+ * @example
+ *
+ * _([1, 2, 3]).forEach(function(num) { console.log(num); }).<span class="apidocCodeKeywordSpan">join</span>(&#x27;,&#x27;);
+ * // =&#x3e; logs each number and returns &#x27;1,2,3&#x27;
+ *
+ * _.forEach({ &#x27;one&#x27;: 1, &#x27;two&#x27;: 2, &#x27;three&#x27;: 3 }, function(num) { console.log(num); });
+ * // =&#x3e; logs each number and returns the object (property order is not guaranteed across environments)
+ */
+function forEach(collection, callback, thisArg) {
+  var index = -1,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.keys" id="apidoc.element.node-scrapy.lodash_custom.prototype.keys">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>keys
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keys = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @static
+ * @memberOf _
+ * @category Objects
+ * @param {Object} object The object to inspect.
+ * @returns {Array} Returns an array of property names.
+ * @example
+ *
+ * _.<span class="apidocCodeKeywordSpan">keys</span>({ &#x27;one&#x27;: 1, &#x27;two&#x27;: 2, &#x27;three&#x27;: 3 });
+ * // =&#x3e; [&#x27;one&#x27;, &#x27;two&#x27;, &#x27;three&#x27;] (property order is not guaranteed across environments)
+ */
+var keys = !nativeKeys ? shimKeys : function(object) {
+  if (!isObject(object)) {
+    return [];
+  }
+  return nativeKeys(object);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.merge" id="apidoc.element.node-scrapy.lodash_custom.prototype.merge">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>merge
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">merge = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * sam.mainProject === DEFAULTS.mainProject
+ * // false
+ */
+
+_.mixin({
+  &#x27;defaultsDeep&#x27;: _.partialRight(_.merge, function deep(value, other) {
+      return _.<span class="apidocCodeKeywordSpan">merge</span>(value, other, deep);
+    })
+});
+
+/**
+ * Custom Error for node-scrapy
+ */
+function ScrapeError(msg, response, bodyString) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.methods" id="apidoc.element.node-scrapy.lodash_custom.prototype.methods">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>methods
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">methods = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.mixin" id="apidoc.element.node-scrapy.lodash_custom.prototype.mixin">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>mixin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mixin = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* _.defaultsDeep(sam, DEFAULTS)
+* // {name:&#x22;Sam&#x22;,likes:[&#x22;html&#x22;,&#x22;css&#x22;],active:true,mainProject:{name:&#x22;supervisor&#x22;,org:&#x22
+;esshi&#x22;},org:&#x22;eeshi&#x22;}
+*
+* sam.mainProject === DEFAULTS.mainProject
+* // false
+*/
+
+_.<span class="apidocCodeKeywordSpan">mixin</span>({
+ &#x27;defaultsDeep&#x27;: _.partialRight(_.merge, function deep(value, other) {
+     return _.merge(value, other, deep);
+   })
+});
+
+/**
+* Custom Error for node-scrapy
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.noop" id="apidoc.element.node-scrapy.lodash_custom.prototype.noop">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>noop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noop = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @static
+ * @memberOf _
+ * @category Utilities
+ * @example
+ *
+ * var object = { &#x27;name&#x27;: &#x27;fred&#x27; };
+ * _.<span class="apidocCodeKeywordSpan">noop</span>(object) === undefined;
+ * // =&#x3e; true
+ */
+function noop() {
+  // no operation performed
+}
+
+/*--------------------------------------------------------------------------*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.partialRight" id="apidoc.element.node-scrapy.lodash_custom.prototype.partialRight">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>partialRight
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">partialRight = function () {
+  var chainAll = this.__chain__,
+      value = this.__wrapped__,
+      args = [value];
+
+  push.apply(args, arguments);
+  var result = func.apply(object, args);
+  if (chain || chainAll) {
+    if (value === result &#x26;&#x26; isObject(result)) {
+      return this;
+    }
+    result = new ctor(result);
+    result.__chain__ = chainAll;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* // {name:&#x22;Sam&#x22;,likes:[&#x22;html&#x22;,&#x22;css&#x22;],active:true,mainProject:{name:&#x22;supervisor&#x22;,org:&#x22
+;esshi&#x22;},org:&#x22;eeshi&#x22;}
+*
+* sam.mainProject === DEFAULTS.mainProject
+* // false
+*/
+
+_.mixin({
+ &#x27;defaultsDeep&#x27;: _.<span class="apidocCodeKeywordSpan">partialRight</span>(_.merge, function deep(value, other) {
+     return _.merge(value, other, deep);
+   })
+});
+
+/**
+* Custom Error for node-scrapy
+*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.pop" id="apidoc.element.node-scrapy.lodash_custom.prototype.pop">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>pop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pop = function () {
+  var chainAll = this.__chain__,
+      result = func.apply(this.__wrapped__, arguments);
+
+  return chainAll
+    ? new lodashWrapper(result, chainAll)
+    : result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Gets an array from the array pool or creates a new one if the pool is empty.
+ *
+ * @private
+ * @returns {Array} The array from the pool.
+ */
+function getArray() {
+  return arrayPool.<span class="apidocCodeKeywordSpan">pop</span>() || [];
+}
+
+/**
+ * Releases the given array back to the array pool.
+ *
+ * @private
+ * @param {Array} [array] The array to release.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.push" id="apidoc.element.node-scrapy.lodash_custom.prototype.push">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>push
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function () {
+  func.apply(this.__wrapped__, arguments);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @private
+ * @param {Array} [array] The array to release.
+ */
+function releaseArray(array) {
+  array.length = 0;
+  if (arrayPool.length &#x3c; maxPoolSize) {
+    arrayPool.<span class="apidocCodeKeywordSpan">push</span>(array);
+  }
+}
+
+/**
+ * Slices the `collection` from the `start` index up to, but not including,
+ * the `end` index.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.reverse" id="apidoc.element.node-scrapy.lodash_custom.prototype.reverse">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>reverse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reverse = function () {
+  func.apply(this.__wrapped__, arguments);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.shift" id="apidoc.element.node-scrapy.lodash_custom.prototype.shift">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>shift
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shift = function () {
+  var chainAll = this.__chain__,
+      result = func.apply(this.__wrapped__, arguments);
+
+  return chainAll
+    ? new lodashWrapper(result, chainAll)
+    : result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.slice" id="apidoc.element.node-scrapy.lodash_custom.prototype.slice">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>slice
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">slice = function () {
+  return new lodashWrapper(func.apply(this.__wrapped__, arguments), this.__chain__);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {Function|Object} [object=lodash] object The destination object.
+* @param {Object} source The object of functions to add.
+* @param {Object} [options] The options object.
+* @param {boolean} [options.chain=true] Specify whether the functions added are chainable.
+* @example
+*
+* function capitalize(string) {
+*   return string.charAt(0).toUpperCase() + string.<span class="apidocCodeKeywordSpan">slice</span>(1).toLowerCase();
+* }
+*
+* _.mixin({ &#x27;capitalize&#x27;: capitalize });
+* _.capitalize(&#x27;fred&#x27;);
+* // =&#x3e; &#x27;Fred&#x27;
+*
+* _(&#x27;fred&#x27;).capitalize().value();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.sort" id="apidoc.element.node-scrapy.lodash_custom.prototype.sort">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>sort
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sort = function () {
+  func.apply(this.__wrapped__, arguments);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function functions(object) {
+  var result = [];
+  forIn(object, function(value, key) {
+    if (isFunction(value)) {
+      result.push(key);
+    }
+  });
+  return result.<span class="apidocCodeKeywordSpan">sort</span>();
+}
+
+/**
+ * Checks if `value` is a function.
+ *
+ * @static
+ * @memberOf _
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.splice" id="apidoc.element.node-scrapy.lodash_custom.prototype.splice">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>splice
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">splice = function () {
+  return new lodashWrapper(func.apply(this.__wrapped__, arguments), this.__chain__);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.support" id="apidoc.element.node-scrapy.lodash_custom.prototype.support">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>support
+        <span class="apidocSignatureSpan">(n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">support = function (n, guard) {
+  var chainAll = this.__chain__,
+      result = func(this.__wrapped__, n, guard);
+
+  return !chainAll &#x26;&#x26; (n == null || (guard &#x26;&#x26; !(callbackable &#x26;&#x26; typeof n == &#x27;function&#x27;)))
+    ? result
+    : new lodashWrapper(result, chainAll);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.toString" id="apidoc.element.node-scrapy.lodash_custom.prototype.toString">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapperToString() {
+  return String(this.__wrapped__);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Default: `true`
+
+##### transform
+
+A `function` applied after all other operations and transformations.
+
+Default: `function() { return this.<span class="apidocCodeKeywordSpan">toString</span>(); }`
+
+##### prefix
+
+A `string` to be prefixed to the result(s). Useful to transform relative URLs into absolute ones.
+
+Default: `&#x27;&#x27;` (empty string)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.unshift" id="apidoc.element.node-scrapy.lodash_custom.prototype.unshift">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>unshift
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unshift = function () {
+  func.apply(this.__wrapped__, arguments);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.value" id="apidoc.element.node-scrapy.lodash_custom.prototype.value">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>value
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapperValueOf() {
+  return this.__wrapped__;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * var squares = wrapped.map(function(num) {
+ *   return num * num;
+ * });
+ *
+ * _.isArray(squares);
+ * // =&#x3e; false
+ *
+ * _.isArray(squares.<span class="apidocCodeKeywordSpan">value</span>());
+ * // =&#x3e; true
+ */
+function lodash(value) {
+  // don&#x27;t wrap if already wrapped, even if wrapped by a different `lodash` constructor
+  return (value &#x26;&#x26; typeof value == &#x27;object&#x27; &#x26;&#x26; !isArray(value) &#x26;&#x26; hasOwnProperty.call(value
+, &#x27;__wrapped__&#x27;))
+   ? value
+   : new lodashWrapper(value);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-scrapy.lodash_custom.prototype.valueOf" id="apidoc.element.node-scrapy.lodash_custom.prototype.valueOf">
+        function <span class="apidocSignatureSpan">node-scrapy.lodash_custom.prototype.</span>valueOf
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapperValueOf() {
+  return this.__wrapped__;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @name valueOf
+ * @memberOf _
+ * @alias value
+ * @category Chaining
+ * @returns {*} Returns the wrapped value.
+ * @example
+ *
+ * _([1, 2, 3]).<span class="apidocCodeKeywordSpan">valueOf</span>();
+ * // =&#x3e; [1, 2, 3]
+ */
+function wrapperValueOf() {
+  return this.__wrapped__;
+}
+
+/*--------------------------------------------------------------------------*/
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
